@@ -1,0 +1,30 @@
+#!/bin/bash -l
+#SBATCH -J train_models
+#SBATCH -o /scratch/b.y.yang/3_TrainTestModel/simplified_experiments/base/log/%j.out
+#SBATCH -e /scratch/b.y.yang/3_TrainTestModel/simplified_experiments/base/log/%j.err
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH --cpus-per-task 1
+#SBATCH --mem 4G
+#SBATCH -t 01:00:00
+#SBATCH --partition=tier2_cpu
+#SBATCH --account=daniel_marcus
+#SBATCH --exclude=highmem01,highmem02
+
+conda activate ad
+
+param_path="/home/b.y.yang/sotiraslab/BradenADLongitudinalPrediction/code/3_TrainTestModel/slurm/cmd.txt"
+
+ROWINDEX=$((SLURM_ARRAY_TASK_ID))
+cmd="$(cat ${param_path} | awk -v line=${ROWINDEX} '{if (NR == line) print $0}')"
+
+echo "===================================="
+echo "running command: ${cmd}"
+echo "===================================="
+echo ""
+
+cd "/home/b.y.yang/sotiraslab/BradenADLongitudinalPrediction/code/3_TrainTestModel"
+
+bash -c "${cmd}"
+
+conda deactivate

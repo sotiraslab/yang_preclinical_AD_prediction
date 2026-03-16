@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+
+</head>
+<body>
+<div id="jghpoinaly" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+  <style>#jghpoinaly table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#jghpoinaly thead, #jghpoinaly tbody, #jghpoinaly tfoot, #jghpoinaly tr, #jghpoinaly td, #jghpoinaly th {
+  border-style: none;
+}
+
+#jghpoinaly p {
+  margin: 0;
+  padding: 0;
+}
+
+#jghpoinaly .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#jghpoinaly .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#jghpoinaly .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#jghpoinaly .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#jghpoinaly .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#jghpoinaly .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#jghpoinaly .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#jghpoinaly .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#jghpoinaly .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#jghpoinaly .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#jghpoinaly .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#jghpoinaly .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#jghpoinaly .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#jghpoinaly .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#jghpoinaly .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#jghpoinaly .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#jghpoinaly .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#jghpoinaly .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#jghpoinaly .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jghpoinaly .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#jghpoinaly .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#jghpoinaly .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#jghpoinaly .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jghpoinaly .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#jghpoinaly .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#jghpoinaly .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#jghpoinaly .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jghpoinaly .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#jghpoinaly .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#jghpoinaly .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#jghpoinaly .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#jghpoinaly .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#jghpoinaly .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jghpoinaly .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#jghpoinaly .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#jghpoinaly .gt_left {
+  text-align: left;
+}
+
+#jghpoinaly .gt_center {
+  text-align: center;
+}
+
+#jghpoinaly .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#jghpoinaly .gt_font_normal {
+  font-weight: normal;
+}
+
+#jghpoinaly .gt_font_bold {
+  font-weight: bold;
+}
+
+#jghpoinaly .gt_font_italic {
+  font-style: italic;
+}
+
+#jghpoinaly .gt_super {
+  font-size: 65%;
+}
+
+#jghpoinaly .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#jghpoinaly .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#jghpoinaly .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#jghpoinaly .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#jghpoinaly .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#jghpoinaly .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#jghpoinaly .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#jghpoinaly .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#jghpoinaly div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <thead>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="a::stub">progression time-horizon (yrs)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="predicted_class">predicted class</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="n">n</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="estimate.SE">model-adjusted mean PACC (± SE)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="lower.CL">lower 95% CI</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="upper.CL">upper 95% CI</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="effect.size.SE">effect size (± SE)</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="p.value.str">p-value</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="Solanezumab">Solanezumab</th>
+    </tr>
+    <tr class="gt_row_group_first"><th id="stub_1_1" scope="row" class="gt_row gt_right gt_stub">1</th>
+<td headers="Solanezumab stub_1_1 predicted_class" class="gt_row gt_center">overall</td>
+<td headers="Solanezumab stub_1_1 n" class="gt_row gt_right">404</td>
+<td headers="Solanezumab stub_1_1 estimate.SE" class="gt_row gt_center">-2.79 ± 0.484</td>
+<td headers="Solanezumab stub_1_1 lower.CL" class="gt_row gt_right">−3.735</td>
+<td headers="Solanezumab stub_1_1 upper.CL" class="gt_row gt_right">−1.839</td>
+<td headers="Solanezumab stub_1_1 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Solanezumab stub_1_1 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_2" scope="row" class="gt_row gt_right gt_stub">1</th>
+<td headers="Solanezumab stub_1_2 predicted_class" class="gt_row gt_center">progressor</td>
+<td headers="Solanezumab stub_1_2 n" class="gt_row gt_right">61</td>
+<td headers="Solanezumab stub_1_2 estimate.SE" class="gt_row gt_center">-4.04 ± 0.896</td>
+<td headers="Solanezumab stub_1_2 lower.CL" class="gt_row gt_right">−5.800</td>
+<td headers="Solanezumab stub_1_2 upper.CL" class="gt_row gt_right">−2.285</td>
+<td headers="Solanezumab stub_1_2 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Solanezumab stub_1_2 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_3" scope="row" class="gt_row gt_right gt_stub">1</th>
+<td headers="Solanezumab stub_1_3 predicted_class" class="gt_row gt_center">stable</td>
+<td headers="Solanezumab stub_1_3 n" class="gt_row gt_right">343</td>
+<td headers="Solanezumab stub_1_3 estimate.SE" class="gt_row gt_center">-1.53 ± 0.283</td>
+<td headers="Solanezumab stub_1_3 lower.CL" class="gt_row gt_right">−2.086</td>
+<td headers="Solanezumab stub_1_3 upper.CL" class="gt_row gt_right">−0.9763</td>
+<td headers="Solanezumab stub_1_3 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Solanezumab stub_1_3 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_4" scope="row" class="gt_row gt_right gt_stub">1</th>
+<td headers="Solanezumab stub_1_4 predicted_class" class="gt_row gt_center">stable - progressor</td>
+<td headers="Solanezumab stub_1_4 n" class="gt_row gt_right">404</td>
+<td headers="Solanezumab stub_1_4 estimate.SE" class="gt_row gt_center">2.51 ± 0.912</td>
+<td headers="Solanezumab stub_1_4 lower.CL" class="gt_row gt_right">0.7235</td>
+<td headers="Solanezumab stub_1_4 upper.CL" class="gt_row gt_right">4.300</td>
+<td headers="Solanezumab stub_1_4 effect.size.SE" class="gt_row gt_center">0.83 ± 0.302</td>
+<td headers="Solanezumab stub_1_4 p.value.str" class="gt_row gt_left">5.93e-02</td></tr>
+    <tr><th id="stub_1_5" scope="row" class="gt_row gt_right gt_stub">2</th>
+<td headers="Solanezumab stub_1_5 predicted_class" class="gt_row gt_center">overall</td>
+<td headers="Solanezumab stub_1_5 n" class="gt_row gt_right">404</td>
+<td headers="Solanezumab stub_1_5 estimate.SE" class="gt_row gt_center">-2.61 ± 0.373</td>
+<td headers="Solanezumab stub_1_5 lower.CL" class="gt_row gt_right">−3.343</td>
+<td headers="Solanezumab stub_1_5 upper.CL" class="gt_row gt_right">−1.882</td>
+<td headers="Solanezumab stub_1_5 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Solanezumab stub_1_5 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_6" scope="row" class="gt_row gt_right gt_stub">2</th>
+<td headers="Solanezumab stub_1_6 predicted_class" class="gt_row gt_center">progressor</td>
+<td headers="Solanezumab stub_1_6 n" class="gt_row gt_right">110</td>
+<td headers="Solanezumab stub_1_6 estimate.SE" class="gt_row gt_center">-4.12 ± 0.656</td>
+<td headers="Solanezumab stub_1_6 lower.CL" class="gt_row gt_right">−5.404</td>
+<td headers="Solanezumab stub_1_6 upper.CL" class="gt_row gt_right">−2.830</td>
+<td headers="Solanezumab stub_1_6 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Solanezumab stub_1_6 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_7" scope="row" class="gt_row gt_right gt_stub">2</th>
+<td headers="Solanezumab stub_1_7 predicted_class" class="gt_row gt_center">stable</td>
+<td headers="Solanezumab stub_1_7 n" class="gt_row gt_right">294</td>
+<td headers="Solanezumab stub_1_7 estimate.SE" class="gt_row gt_center">-1.11 ± 0.274</td>
+<td headers="Solanezumab stub_1_7 lower.CL" class="gt_row gt_right">−1.646</td>
+<td headers="Solanezumab stub_1_7 upper.CL" class="gt_row gt_right">−0.5710</td>
+<td headers="Solanezumab stub_1_7 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Solanezumab stub_1_7 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_8" scope="row" class="gt_row gt_right gt_stub">2</th>
+<td headers="Solanezumab stub_1_8 predicted_class" class="gt_row gt_center">stable - progressor</td>
+<td headers="Solanezumab stub_1_8 n" class="gt_row gt_right">404</td>
+<td headers="Solanezumab stub_1_8 estimate.SE" class="gt_row gt_center">3.01 ± 0.676</td>
+<td headers="Solanezumab stub_1_8 lower.CL" class="gt_row gt_right">1.684</td>
+<td headers="Solanezumab stub_1_8 upper.CL" class="gt_row gt_right">4.333</td>
+<td headers="Solanezumab stub_1_8 effect.size.SE" class="gt_row gt_center">   1 ± 0.225</td>
+<td headers="Solanezumab stub_1_8 p.value.str" class="gt_row gt_left">8.75e-05****</td></tr>
+    <tr><th id="stub_1_9" scope="row" class="gt_row gt_right gt_stub">3</th>
+<td headers="Solanezumab stub_1_9 predicted_class" class="gt_row gt_center">overall</td>
+<td headers="Solanezumab stub_1_9 n" class="gt_row gt_right">404</td>
+<td headers="Solanezumab stub_1_9 estimate.SE" class="gt_row gt_center">-2.39 ± 0.325</td>
+<td headers="Solanezumab stub_1_9 lower.CL" class="gt_row gt_right">−3.026</td>
+<td headers="Solanezumab stub_1_9 upper.CL" class="gt_row gt_right">−1.750</td>
+<td headers="Solanezumab stub_1_9 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Solanezumab stub_1_9 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_10" scope="row" class="gt_row gt_right gt_stub">3</th>
+<td headers="Solanezumab stub_1_10 predicted_class" class="gt_row gt_center">progressor</td>
+<td headers="Solanezumab stub_1_10 n" class="gt_row gt_right">140</td>
+<td headers="Solanezumab stub_1_10 estimate.SE" class="gt_row gt_center">-3.89 ± 0.546</td>
+<td headers="Solanezumab stub_1_10 lower.CL" class="gt_row gt_right">−4.961</td>
+<td headers="Solanezumab stub_1_10 upper.CL" class="gt_row gt_right">−2.822</td>
+<td headers="Solanezumab stub_1_10 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Solanezumab stub_1_10 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_11" scope="row" class="gt_row gt_right gt_stub">3</th>
+<td headers="Solanezumab stub_1_11 predicted_class" class="gt_row gt_center">stable</td>
+<td headers="Solanezumab stub_1_11 n" class="gt_row gt_right">264</td>
+<td headers="Solanezumab stub_1_11 estimate.SE" class="gt_row gt_center">-0.884 ± 0.277</td>
+<td headers="Solanezumab stub_1_11 lower.CL" class="gt_row gt_right">−1.428</td>
+<td headers="Solanezumab stub_1_11 upper.CL" class="gt_row gt_right">−0.3408</td>
+<td headers="Solanezumab stub_1_11 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Solanezumab stub_1_11 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_12" scope="row" class="gt_row gt_right gt_stub">3</th>
+<td headers="Solanezumab stub_1_12 predicted_class" class="gt_row gt_center">stable - progressor</td>
+<td headers="Solanezumab stub_1_12 n" class="gt_row gt_right">404</td>
+<td headers="Solanezumab stub_1_12 estimate.SE" class="gt_row gt_center">3.01 ± 0.571</td>
+<td headers="Solanezumab stub_1_12 lower.CL" class="gt_row gt_right">1.888</td>
+<td headers="Solanezumab stub_1_12 upper.CL" class="gt_row gt_right">4.126</td>
+<td headers="Solanezumab stub_1_12 effect.size.SE" class="gt_row gt_center">   1 ± 0.191</td>
+<td headers="Solanezumab stub_1_12 p.value.str" class="gt_row gt_left">1.47e-06****</td></tr>
+    <tr><th id="stub_1_13" scope="row" class="gt_row gt_right gt_stub">4</th>
+<td headers="Solanezumab stub_1_13 predicted_class" class="gt_row gt_center">overall</td>
+<td headers="Solanezumab stub_1_13 n" class="gt_row gt_right">404</td>
+<td headers="Solanezumab stub_1_13 estimate.SE" class="gt_row gt_center">-2.3 ± 0.32</td>
+<td headers="Solanezumab stub_1_13 lower.CL" class="gt_row gt_right">−2.932</td>
+<td headers="Solanezumab stub_1_13 upper.CL" class="gt_row gt_right">−1.676</td>
+<td headers="Solanezumab stub_1_13 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Solanezumab stub_1_13 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_14" scope="row" class="gt_row gt_right gt_stub">4</th>
+<td headers="Solanezumab stub_1_14 predicted_class" class="gt_row gt_center">progressor</td>
+<td headers="Solanezumab stub_1_14 n" class="gt_row gt_right">150</td>
+<td headers="Solanezumab stub_1_14 estimate.SE" class="gt_row gt_center">-3.74 ± 0.534</td>
+<td headers="Solanezumab stub_1_14 lower.CL" class="gt_row gt_right">−4.789</td>
+<td headers="Solanezumab stub_1_14 upper.CL" class="gt_row gt_right">−2.694</td>
+<td headers="Solanezumab stub_1_14 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Solanezumab stub_1_14 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_15" scope="row" class="gt_row gt_right gt_stub">4</th>
+<td headers="Solanezumab stub_1_15 predicted_class" class="gt_row gt_center">stable</td>
+<td headers="Solanezumab stub_1_15 n" class="gt_row gt_right">254</td>
+<td headers="Solanezumab stub_1_15 estimate.SE" class="gt_row gt_center">-0.867 ± 0.277</td>
+<td headers="Solanezumab stub_1_15 lower.CL" class="gt_row gt_right">−1.409</td>
+<td headers="Solanezumab stub_1_15 upper.CL" class="gt_row gt_right">−0.3242</td>
+<td headers="Solanezumab stub_1_15 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Solanezumab stub_1_15 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_16" scope="row" class="gt_row gt_right gt_stub">4</th>
+<td headers="Solanezumab stub_1_16 predicted_class" class="gt_row gt_center">stable - progressor</td>
+<td headers="Solanezumab stub_1_16 n" class="gt_row gt_right">404</td>
+<td headers="Solanezumab stub_1_16 estimate.SE" class="gt_row gt_center">2.88 ± 0.56</td>
+<td headers="Solanezumab stub_1_16 lower.CL" class="gt_row gt_right">1.778</td>
+<td headers="Solanezumab stub_1_16 upper.CL" class="gt_row gt_right">3.972</td>
+<td headers="Solanezumab stub_1_16 effect.size.SE" class="gt_row gt_center">0.958 ± 0.187</td>
+<td headers="Solanezumab stub_1_16 p.value.str" class="gt_row gt_left">2.93e-06****</td></tr>
+    <tr><th id="stub_1_17" scope="row" class="gt_row gt_right gt_stub">5</th>
+<td headers="Solanezumab stub_1_17 predicted_class" class="gt_row gt_center">overall</td>
+<td headers="Solanezumab stub_1_17 n" class="gt_row gt_right">404</td>
+<td headers="Solanezumab stub_1_17 estimate.SE" class="gt_row gt_center">-2.38 ± 0.332</td>
+<td headers="Solanezumab stub_1_17 lower.CL" class="gt_row gt_right">−3.031</td>
+<td headers="Solanezumab stub_1_17 upper.CL" class="gt_row gt_right">−1.728</td>
+<td headers="Solanezumab stub_1_17 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Solanezumab stub_1_17 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_18" scope="row" class="gt_row gt_right gt_stub">5</th>
+<td headers="Solanezumab stub_1_18 predicted_class" class="gt_row gt_center">progressor</td>
+<td headers="Solanezumab stub_1_18 n" class="gt_row gt_right">143</td>
+<td headers="Solanezumab stub_1_18 estimate.SE" class="gt_row gt_center">-3.92 ± 0.568</td>
+<td headers="Solanezumab stub_1_18 lower.CL" class="gt_row gt_right">−5.032</td>
+<td headers="Solanezumab stub_1_18 upper.CL" class="gt_row gt_right">−2.804</td>
+<td headers="Solanezumab stub_1_18 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Solanezumab stub_1_18 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_19" scope="row" class="gt_row gt_right gt_stub">5</th>
+<td headers="Solanezumab stub_1_19 predicted_class" class="gt_row gt_center">stable</td>
+<td headers="Solanezumab stub_1_19 n" class="gt_row gt_right">261</td>
+<td headers="Solanezumab stub_1_19 estimate.SE" class="gt_row gt_center">-0.84 ± 0.264</td>
+<td headers="Solanezumab stub_1_19 lower.CL" class="gt_row gt_right">−1.358</td>
+<td headers="Solanezumab stub_1_19 upper.CL" class="gt_row gt_right">−0.3231</td>
+<td headers="Solanezumab stub_1_19 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Solanezumab stub_1_19 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_20" scope="row" class="gt_row gt_right gt_stub">5</th>
+<td headers="Solanezumab stub_1_20 predicted_class" class="gt_row gt_center">stable - progressor</td>
+<td headers="Solanezumab stub_1_20 n" class="gt_row gt_right">404</td>
+<td headers="Solanezumab stub_1_20 estimate.SE" class="gt_row gt_center">3.08 ± 0.586</td>
+<td headers="Solanezumab stub_1_20 lower.CL" class="gt_row gt_right">1.929</td>
+<td headers="Solanezumab stub_1_20 upper.CL" class="gt_row gt_right">4.227</td>
+<td headers="Solanezumab stub_1_20 effect.size.SE" class="gt_row gt_center">1.03 ± 0.196</td>
+<td headers="Solanezumab stub_1_20 p.value.str" class="gt_row gt_left">1.59e-06****</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="8" class="gt_group_heading" scope="colgroup" id="Placebo">Placebo</th>
+    </tr>
+    <tr class="gt_row_group_first"><th id="stub_1_21" scope="row" class="gt_row gt_right gt_stub">1</th>
+<td headers="Placebo stub_1_21 predicted_class" class="gt_row gt_center">overall</td>
+<td headers="Placebo stub_1_21 n" class="gt_row gt_right">444</td>
+<td headers="Placebo stub_1_21 estimate.SE" class="gt_row gt_center">-2.51 ± 0.347</td>
+<td headers="Placebo stub_1_21 lower.CL" class="gt_row gt_right">−3.188</td>
+<td headers="Placebo stub_1_21 upper.CL" class="gt_row gt_right">−1.826</td>
+<td headers="Placebo stub_1_21 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Placebo stub_1_21 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_22" scope="row" class="gt_row gt_right gt_stub">1</th>
+<td headers="Placebo stub_1_22 predicted_class" class="gt_row gt_center">progressor</td>
+<td headers="Placebo stub_1_22 n" class="gt_row gt_right">72</td>
+<td headers="Placebo stub_1_22 estimate.SE" class="gt_row gt_center">-3.6 ± 0.624</td>
+<td headers="Placebo stub_1_22 lower.CL" class="gt_row gt_right">−4.826</td>
+<td headers="Placebo stub_1_22 upper.CL" class="gt_row gt_right">−2.373</td>
+<td headers="Placebo stub_1_22 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Placebo stub_1_22 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_23" scope="row" class="gt_row gt_right gt_stub">1</th>
+<td headers="Placebo stub_1_23 predicted_class" class="gt_row gt_center">stable</td>
+<td headers="Placebo stub_1_23 n" class="gt_row gt_right">372</td>
+<td headers="Placebo stub_1_23 estimate.SE" class="gt_row gt_center">-1.41 ± 0.23</td>
+<td headers="Placebo stub_1_23 lower.CL" class="gt_row gt_right">−1.866</td>
+<td headers="Placebo stub_1_23 upper.CL" class="gt_row gt_right">−0.9629</td>
+<td headers="Placebo stub_1_23 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Placebo stub_1_23 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_24" scope="row" class="gt_row gt_right gt_stub">1</th>
+<td headers="Placebo stub_1_24 predicted_class" class="gt_row gt_center">stable - progressor</td>
+<td headers="Placebo stub_1_24 n" class="gt_row gt_right">444</td>
+<td headers="Placebo stub_1_24 estimate.SE" class="gt_row gt_center">2.19 ± 0.635</td>
+<td headers="Placebo stub_1_24 lower.CL" class="gt_row gt_right">0.9398</td>
+<td headers="Placebo stub_1_24 upper.CL" class="gt_row gt_right">3.431</td>
+<td headers="Placebo stub_1_24 effect.size.SE" class="gt_row gt_center">0.812 ± 0.236</td>
+<td headers="Placebo stub_1_24 p.value.str" class="gt_row gt_left">6.31e-03**</td></tr>
+    <tr><th id="stub_1_25" scope="row" class="gt_row gt_right gt_stub">2</th>
+<td headers="Placebo stub_1_25 predicted_class" class="gt_row gt_center">overall</td>
+<td headers="Placebo stub_1_25 n" class="gt_row gt_right">444</td>
+<td headers="Placebo stub_1_25 estimate.SE" class="gt_row gt_center">-2.37 ± 0.277</td>
+<td headers="Placebo stub_1_25 lower.CL" class="gt_row gt_right">−2.914</td>
+<td headers="Placebo stub_1_25 upper.CL" class="gt_row gt_right">−1.827</td>
+<td headers="Placebo stub_1_25 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Placebo stub_1_25 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_26" scope="row" class="gt_row gt_right gt_stub">2</th>
+<td headers="Placebo stub_1_26 predicted_class" class="gt_row gt_center">progressor</td>
+<td headers="Placebo stub_1_26 n" class="gt_row gt_right">132</td>
+<td headers="Placebo stub_1_26 estimate.SE" class="gt_row gt_center">-3.77 ± 0.47</td>
+<td headers="Placebo stub_1_26 lower.CL" class="gt_row gt_right">−4.688</td>
+<td headers="Placebo stub_1_26 upper.CL" class="gt_row gt_right">−2.843</td>
+<td headers="Placebo stub_1_26 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Placebo stub_1_26 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_27" scope="row" class="gt_row gt_right gt_stub">2</th>
+<td headers="Placebo stub_1_27 predicted_class" class="gt_row gt_center">stable</td>
+<td headers="Placebo stub_1_27 n" class="gt_row gt_right">312</td>
+<td headers="Placebo stub_1_27 estimate.SE" class="gt_row gt_center">-0.975 ± 0.219</td>
+<td headers="Placebo stub_1_27 lower.CL" class="gt_row gt_right">−1.406</td>
+<td headers="Placebo stub_1_27 upper.CL" class="gt_row gt_right">−0.5452</td>
+<td headers="Placebo stub_1_27 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Placebo stub_1_27 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_28" scope="row" class="gt_row gt_right gt_stub">2</th>
+<td headers="Placebo stub_1_28 predicted_class" class="gt_row gt_center">stable - progressor</td>
+<td headers="Placebo stub_1_28 n" class="gt_row gt_right">444</td>
+<td headers="Placebo stub_1_28 estimate.SE" class="gt_row gt_center">2.79 ± 0.481</td>
+<td headers="Placebo stub_1_28 lower.CL" class="gt_row gt_right">1.847</td>
+<td headers="Placebo stub_1_28 upper.CL" class="gt_row gt_right">3.733</td>
+<td headers="Placebo stub_1_28 effect.size.SE" class="gt_row gt_center">1.04 ± 0.18</td>
+<td headers="Placebo stub_1_28 p.value.str" class="gt_row gt_left">7.11e-08****</td></tr>
+    <tr><th id="stub_1_29" scope="row" class="gt_row gt_right gt_stub">3</th>
+<td headers="Placebo stub_1_29 predicted_class" class="gt_row gt_center">overall</td>
+<td headers="Placebo stub_1_29 n" class="gt_row gt_right">444</td>
+<td headers="Placebo stub_1_29 estimate.SE" class="gt_row gt_center">-2.06 ± 0.258</td>
+<td headers="Placebo stub_1_29 lower.CL" class="gt_row gt_right">−2.561</td>
+<td headers="Placebo stub_1_29 upper.CL" class="gt_row gt_right">−1.550</td>
+<td headers="Placebo stub_1_29 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Placebo stub_1_29 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_30" scope="row" class="gt_row gt_right gt_stub">3</th>
+<td headers="Placebo stub_1_30 predicted_class" class="gt_row gt_center">progressor</td>
+<td headers="Placebo stub_1_30 n" class="gt_row gt_right">158</td>
+<td headers="Placebo stub_1_30 estimate.SE" class="gt_row gt_center">-3.12 ± 0.419</td>
+<td headers="Placebo stub_1_30 lower.CL" class="gt_row gt_right">−3.942</td>
+<td headers="Placebo stub_1_30 upper.CL" class="gt_row gt_right">−2.297</td>
+<td headers="Placebo stub_1_30 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Placebo stub_1_30 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_31" scope="row" class="gt_row gt_right gt_stub">3</th>
+<td headers="Placebo stub_1_31 predicted_class" class="gt_row gt_center">stable</td>
+<td headers="Placebo stub_1_31 n" class="gt_row gt_right">286</td>
+<td headers="Placebo stub_1_31 estimate.SE" class="gt_row gt_center">-0.992 ± 0.223</td>
+<td headers="Placebo stub_1_31 lower.CL" class="gt_row gt_right">−1.429</td>
+<td headers="Placebo stub_1_31 upper.CL" class="gt_row gt_right">−0.5548</td>
+<td headers="Placebo stub_1_31 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Placebo stub_1_31 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_32" scope="row" class="gt_row gt_right gt_stub">3</th>
+<td headers="Placebo stub_1_32 predicted_class" class="gt_row gt_center">stable - progressor</td>
+<td headers="Placebo stub_1_32 n" class="gt_row gt_right">444</td>
+<td headers="Placebo stub_1_32 estimate.SE" class="gt_row gt_center">2.13 ± 0.431</td>
+<td headers="Placebo stub_1_32 lower.CL" class="gt_row gt_right">1.283</td>
+<td headers="Placebo stub_1_32 upper.CL" class="gt_row gt_right">2.972</td>
+<td headers="Placebo stub_1_32 effect.size.SE" class="gt_row gt_center">0.794 ± 0.161</td>
+<td headers="Placebo stub_1_32 p.value.str" class="gt_row gt_left">8.12e-06****</td></tr>
+    <tr><th id="stub_1_33" scope="row" class="gt_row gt_right gt_stub">4</th>
+<td headers="Placebo stub_1_33 predicted_class" class="gt_row gt_center">overall</td>
+<td headers="Placebo stub_1_33 n" class="gt_row gt_right">444</td>
+<td headers="Placebo stub_1_33 estimate.SE" class="gt_row gt_center">-2.2 ± 0.261</td>
+<td headers="Placebo stub_1_33 lower.CL" class="gt_row gt_right">−2.714</td>
+<td headers="Placebo stub_1_33 upper.CL" class="gt_row gt_right">−1.690</td>
+<td headers="Placebo stub_1_33 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Placebo stub_1_33 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_34" scope="row" class="gt_row gt_right gt_stub">4</th>
+<td headers="Placebo stub_1_34 predicted_class" class="gt_row gt_center">progressor</td>
+<td headers="Placebo stub_1_34 n" class="gt_row gt_right">149</td>
+<td headers="Placebo stub_1_34 estimate.SE" class="gt_row gt_center">-3.51 ± 0.429</td>
+<td headers="Placebo stub_1_34 lower.CL" class="gt_row gt_right">−4.349</td>
+<td headers="Placebo stub_1_34 upper.CL" class="gt_row gt_right">−2.667</td>
+<td headers="Placebo stub_1_34 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Placebo stub_1_34 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_35" scope="row" class="gt_row gt_right gt_stub">4</th>
+<td headers="Placebo stub_1_35 predicted_class" class="gt_row gt_center">stable</td>
+<td headers="Placebo stub_1_35 n" class="gt_row gt_right">295</td>
+<td headers="Placebo stub_1_35 estimate.SE" class="gt_row gt_center">-0.896 ± 0.223</td>
+<td headers="Placebo stub_1_35 lower.CL" class="gt_row gt_right">−1.333</td>
+<td headers="Placebo stub_1_35 upper.CL" class="gt_row gt_right">−0.4589</td>
+<td headers="Placebo stub_1_35 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Placebo stub_1_35 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_36" scope="row" class="gt_row gt_right gt_stub">4</th>
+<td headers="Placebo stub_1_36 predicted_class" class="gt_row gt_center">stable - progressor</td>
+<td headers="Placebo stub_1_36 n" class="gt_row gt_right">444</td>
+<td headers="Placebo stub_1_36 estimate.SE" class="gt_row gt_center">2.61 ± 0.441</td>
+<td headers="Placebo stub_1_36 lower.CL" class="gt_row gt_right">1.748</td>
+<td headers="Placebo stub_1_36 upper.CL" class="gt_row gt_right">3.476</td>
+<td headers="Placebo stub_1_36 effect.size.SE" class="gt_row gt_center">0.977 ± 0.165</td>
+<td headers="Placebo stub_1_36 p.value.str" class="gt_row gt_left">3.33e-08****</td></tr>
+    <tr><th id="stub_1_37" scope="row" class="gt_row gt_right gt_stub">5</th>
+<td headers="Placebo stub_1_37 predicted_class" class="gt_row gt_center">overall</td>
+<td headers="Placebo stub_1_37 n" class="gt_row gt_right">444</td>
+<td headers="Placebo stub_1_37 estimate.SE" class="gt_row gt_center">-2.17 ± 0.262</td>
+<td headers="Placebo stub_1_37 lower.CL" class="gt_row gt_right">−2.685</td>
+<td headers="Placebo stub_1_37 upper.CL" class="gt_row gt_right">−1.659</td>
+<td headers="Placebo stub_1_37 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Placebo stub_1_37 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_38" scope="row" class="gt_row gt_right gt_stub">5</th>
+<td headers="Placebo stub_1_38 predicted_class" class="gt_row gt_center">progressor</td>
+<td headers="Placebo stub_1_38 n" class="gt_row gt_right">150</td>
+<td headers="Placebo stub_1_38 estimate.SE" class="gt_row gt_center">-3.39 ± 0.428</td>
+<td headers="Placebo stub_1_38 lower.CL" class="gt_row gt_right">−4.229</td>
+<td headers="Placebo stub_1_38 upper.CL" class="gt_row gt_right">−2.549</td>
+<td headers="Placebo stub_1_38 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Placebo stub_1_38 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_39" scope="row" class="gt_row gt_right gt_stub">5</th>
+<td headers="Placebo stub_1_39 predicted_class" class="gt_row gt_center">stable</td>
+<td headers="Placebo stub_1_39 n" class="gt_row gt_right">294</td>
+<td headers="Placebo stub_1_39 estimate.SE" class="gt_row gt_center">-0.955 ± 0.224</td>
+<td headers="Placebo stub_1_39 lower.CL" class="gt_row gt_right">−1.394</td>
+<td headers="Placebo stub_1_39 upper.CL" class="gt_row gt_right">−0.5160</td>
+<td headers="Placebo stub_1_39 effect.size.SE" class="gt_row gt_center"><br /></td>
+<td headers="Placebo stub_1_39 p.value.str" class="gt_row gt_left"><br /></td></tr>
+    <tr><th id="stub_1_40" scope="row" class="gt_row gt_right gt_stub">5</th>
+<td headers="Placebo stub_1_40 predicted_class" class="gt_row gt_center">stable - progressor</td>
+<td headers="Placebo stub_1_40 n" class="gt_row gt_right">444</td>
+<td headers="Placebo stub_1_40 estimate.SE" class="gt_row gt_center">2.43 ± 0.44</td>
+<td headers="Placebo stub_1_40 lower.CL" class="gt_row gt_right">1.571</td>
+<td headers="Placebo stub_1_40 upper.CL" class="gt_row gt_right">3.296</td>
+<td headers="Placebo stub_1_40 effect.size.SE" class="gt_row gt_center">0.909 ± 0.165</td>
+<td headers="Placebo stub_1_40 p.value.str" class="gt_row gt_left">3.37e-07****</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</body>
+</html>

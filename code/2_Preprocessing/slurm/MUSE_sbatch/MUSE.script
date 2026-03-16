@@ -1,0 +1,30 @@
+#!/bin/bash -l
+#SBATCH -J MUSE
+#SBATCH -o /ceph/chpc/shared/aristeidis_sotiras_group/b.y.yang_scratch/T1_MUSE/slurm_logs/20250425/%j.out
+#SBATCH -e /ceph/chpc/shared/aristeidis_sotiras_group/b.y.yang_scratch/T1_MUSE/slurm_logs/20250425/%j.err
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH --cpus-per-task 4
+#SBATCH --mem 32G
+#SBATCH -t 24:00:00
+#SBATCH --partition=tier2_cpu
+#SBATCH --account=aristeidis_sotiras
+#SBATCH --exclude=highmem01,highmem02
+
+# param_path="/home/b.y.yang/sotiraslab/BradenADLongitudinalPrediction/data/subj/proc/muse_pac.txt"
+param_path="/home/b.y.yang/sotiraslab/BradenADLongitudinalPrediction/code/2_Preprocessing/slurm/MUSE_sbatch/scratch/muse_pac_failed.txt"
+
+ROWINDEX=$(( SLURM_ARRAY_TASK_ID ))
+param_arr=($(cat ${param_path} | awk -v line=${ROWINDEX} '{if (NR == line) print $0}'))
+
+scan_id=${param_arr[0]}
+t1_path=${param_arr[1]}
+
+cmd="./run_MUSE.sh -i ${t1_path} -s ${scan_id} -o /ceph/chpc/shared/aristeidis_sotiras_group/b.y.yang_scratch/T1_MUSE"
+
+echo "===================================="
+echo "running command: ${cmd}"
+echo "===================================="
+echo ""
+
+eval "${cmd}"

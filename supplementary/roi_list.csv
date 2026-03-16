@@ -1,0 +1,121 @@
+roi,roi_type,amyloid,volume
+Right Accumbens Area,subcortical,TRUE,TRUE
+Left Accumbens Area,subcortical,TRUE,TRUE
+Right Amygdala,subcortical,TRUE,TRUE
+Left Amygdala,subcortical,TRUE,TRUE
+Right Caudate,subcortical,TRUE,TRUE
+Left Caudate,subcortical,TRUE,TRUE
+Right Hippocampus,subcortical,TRUE,TRUE
+Left Hippocampus,subcortical,TRUE,TRUE
+Right Pallidum,subcortical,TRUE,TRUE
+Left Pallidum,subcortical,TRUE,TRUE
+Right Putamen,subcortical,TRUE,TRUE
+Left Putamen,subcortical,TRUE,TRUE
+Right Thalamus Proper,subcortical,TRUE,TRUE
+Left Thalamus Proper,subcortical,TRUE,TRUE
+Left Basal Forebrain,subcortical,TRUE,TRUE
+Right Basal Forebrain,subcortical,TRUE,TRUE
+Right ACgG  anterior cingulate gyrus,cortical,TRUE,TRUE
+Left ACgG  anterior cingulate gyrus,cortical,TRUE,TRUE
+Right AIns  anterior insula,cortical,TRUE,TRUE
+Left AIns  anterior insula,cortical,TRUE,TRUE
+Right AOrG  anterior orbital gyrus,cortical,TRUE,TRUE
+Left AOrG  anterior orbital gyrus,cortical,TRUE,TRUE
+Right AnG   angular gyrus,cortical,TRUE,TRUE
+Left AnG   angular gyrus,cortical,TRUE,TRUE
+Right Calc  calcarine cortex,cortical,TRUE,TRUE
+Left Calc  calcarine cortex,cortical,TRUE,TRUE
+Right CO    central operculum,cortical,TRUE,TRUE
+Left CO    central operculum,cortical,TRUE,TRUE
+Right Cun   cuneus,cortical,TRUE,TRUE
+Left Cun   cuneus,cortical,TRUE,TRUE
+Right Ent   entorhinal area,cortical,TRUE,TRUE
+Left Ent   entorhinal area,cortical,TRUE,TRUE
+Right FO    frontal operculum,cortical,TRUE,TRUE
+Left FO    frontal operculum,cortical,TRUE,TRUE
+Right FRP   frontal pole,cortical,TRUE,TRUE
+Left FRP   frontal pole,cortical,TRUE,TRUE
+Right FuG   fusiform gyrus,cortical,TRUE,TRUE
+Left FuG   fusiform gyrus,cortical,TRUE,TRUE
+Right GRe   gyrus rectus,cortical,TRUE,TRUE
+Left GRe   gyrus rectus,cortical,TRUE,TRUE
+Right IOG   inferior occipital gyrus,cortical,TRUE,TRUE
+Left IOG   inferior occipital gyrus,cortical,TRUE,TRUE
+Right ITG   inferior temporal gyrus,cortical,TRUE,TRUE
+Left ITG   inferior temporal gyrus,cortical,TRUE,TRUE
+Right LiG   lingual gyrus,cortical,TRUE,TRUE
+Left LiG   lingual gyrus,cortical,TRUE,TRUE
+Right LOrG  lateral orbital gyrus,cortical,TRUE,TRUE
+Left LOrG  lateral orbital gyrus,cortical,TRUE,TRUE
+Right MCgG  middle cingulate gyrus,cortical,TRUE,TRUE
+Left MCgG  middle cingulate gyrus,cortical,TRUE,TRUE
+Right MFC   medial frontal cortex,cortical,TRUE,TRUE
+Left MFC   medial frontal cortex,cortical,TRUE,TRUE
+Right MFG   middle frontal gyrus,cortical,TRUE,TRUE
+Left MFG   middle frontal gyrus,cortical,TRUE,TRUE
+Right MOG   middle occipital gyrus,cortical,TRUE,TRUE
+Left MOG   middle occipital gyrus,cortical,TRUE,TRUE
+Right MOrG  medial orbital gyrus,cortical,TRUE,TRUE
+Left MOrG  medial orbital gyrus,cortical,TRUE,TRUE
+Right MPoG  postcentral gyrus medial segment,cortical,TRUE,TRUE
+Left MPoG  postcentral gyrus medial segment,cortical,TRUE,TRUE
+Right MPrG  precentral gyrus medial segment,cortical,TRUE,TRUE
+Left MPrG  precentral gyrus medial segment,cortical,TRUE,TRUE
+Right MSFG  superior frontal gyrus medial segment,cortical,TRUE,TRUE
+Left MSFG  superior frontal gyrus medial segment,cortical,TRUE,TRUE
+Right MTG   middle temporal gyrus,cortical,TRUE,TRUE
+Left MTG   middle temporal gyrus,cortical,TRUE,TRUE
+Right OCP   occipital pole,cortical,TRUE,TRUE
+Left OCP   occipital pole,cortical,TRUE,TRUE
+Right OFuG  occipital fusiform gyrus,cortical,TRUE,TRUE
+Left OFuG  occipital fusiform gyrus,cortical,TRUE,TRUE
+Right OpIFG opercular part of the inferior frontal gyrus,cortical,TRUE,TRUE
+Left OpIFG opercular part of the inferior frontal gyrus,cortical,TRUE,TRUE
+Right OrIFG orbital part of the inferior frontal gyrus,cortical,TRUE,TRUE
+Left OrIFG orbital part of the inferior frontal gyrus,cortical,TRUE,TRUE
+Right PCgG  posterior cingulate gyrus,cortical,TRUE,TRUE
+Left PCgG  posterior cingulate gyrus,cortical,TRUE,TRUE
+Right PCu   precuneus,cortical,TRUE,TRUE
+Left PCu   precuneus,cortical,TRUE,TRUE
+Right PHG   parahippocampal gyrus,cortical,TRUE,TRUE
+Left PHG   parahippocampal gyrus,cortical,TRUE,TRUE
+Right PIns  posterior insula,cortical,TRUE,TRUE
+Left PIns  posterior insula,cortical,TRUE,TRUE
+Right PO    parietal operculum,cortical,TRUE,TRUE
+Left PO    parietal operculum,cortical,TRUE,TRUE
+Right PoG   postcentral gyrus,cortical,TRUE,TRUE
+Left PoG   postcentral gyrus,cortical,TRUE,TRUE
+Right POrG  posterior orbital gyrus,cortical,TRUE,TRUE
+Left POrG  posterior orbital gyrus,cortical,TRUE,TRUE
+Right PP    planum polare,cortical,TRUE,TRUE
+Left PP    planum polare,cortical,TRUE,TRUE
+Right PrG   precentral gyrus,cortical,TRUE,TRUE
+Left PrG   precentral gyrus,cortical,TRUE,TRUE
+Right PT    planum temporale,cortical,TRUE,TRUE
+Left PT    planum temporale,cortical,TRUE,TRUE
+Right SCA   subcallosal area,cortical,TRUE,TRUE
+Left SCA   subcallosal area,cortical,TRUE,TRUE
+Right SFG   superior frontal gyrus,cortical,TRUE,TRUE
+Left SFG   superior frontal gyrus,cortical,TRUE,TRUE
+Right SMC   supplementary motor cortex,cortical,TRUE,TRUE
+Left SMC   supplementary motor cortex,cortical,TRUE,TRUE
+Right SMG   supramarginal gyrus,cortical,TRUE,TRUE
+Left SMG   supramarginal gyrus,cortical,TRUE,TRUE
+Right SOG   superior occipital gyrus,cortical,TRUE,TRUE
+Left SOG   superior occipital gyrus,cortical,TRUE,TRUE
+Right SPL   superior parietal lobule,cortical,TRUE,TRUE
+Left SPL   superior parietal lobule,cortical,TRUE,TRUE
+Right STG   superior temporal gyrus,cortical,TRUE,TRUE
+Left STG   superior temporal gyrus,cortical,TRUE,TRUE
+Right TMP   temporal pole,cortical,TRUE,TRUE
+Left TMP   temporal pole,cortical,TRUE,TRUE
+Right TrIFG triangular part of the inferior frontal gyrus,cortical,TRUE,TRUE
+Left TrIFG triangular part of the inferior frontal gyrus,cortical,TRUE,TRUE
+Right TTG   transverse temporal gyrus,cortical,TRUE,TRUE
+Left TTG   transverse temporal gyrus,cortical,TRUE,TRUE
+3rd Ventricle,ventricle,FALSE,TRUE
+4th Ventricle,ventricle,FALSE,TRUE
+Right Inf Lat Vent,ventricle,FALSE,TRUE
+Left Inf Lat Vent,ventricle,FALSE,TRUE
+Right Lateral Ventricle,ventricle,FALSE,TRUE
+Left Lateral Ventricle,ventricle,FALSE,TRUE

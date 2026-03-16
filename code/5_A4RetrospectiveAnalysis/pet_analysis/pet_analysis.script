@@ -1,0 +1,31 @@
+#!/bin/bash -l
+#SBATCH -J pet_analysis
+#SBATCH -o /ceph/chpc/shared/aristeidis_sotiras_group/b.y.yang_scratch/pet_analysis_A4_treatment/slurm_logs/20250620_4/%j.out
+#SBATCH -e /ceph/chpc/shared/aristeidis_sotiras_group/b.y.yang_scratch/pet_analysis_A4_treatment/slurm_logs/20250620_4/%j.err
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH --mem 4G
+#SBATCH -t 00:20:00
+#SBATCH --partition=tier2_cpu
+#SBATCH --account=aristeidis_sotiras
+#SBATCH --exclude=highmem01,highmem02
+
+param_path="/home/b.y.yang/sotiraslab/BradenADLongitudinalPrediction/code/exploratory/a4_treatment/pet_analysis/cmd.txt"
+
+ROWINDEX=$(( SLURM_ARRAY_TASK_ID ))
+cmd=$(sed -n "${ROWINDEX}p" ${param_path})
+
+export SPMMCRCMD="/ceph/chpc/shared/aristeidis_sotiras_group/b.y.yang_scratch/spm12/run_spm12.sh /ceph/chpc/shared/aristeidis_sotiras_group/b.y.yang_scratch/MCR/v910/ script"
+
+conda activate ad
+module load fsl ants matlab
+
+echo "===================================="
+echo "running command: ${cmd}"
+echo "===================================="
+echo ""
+
+eval "${cmd}"
+
+module unload fsl ants matlab
+conda deactivate

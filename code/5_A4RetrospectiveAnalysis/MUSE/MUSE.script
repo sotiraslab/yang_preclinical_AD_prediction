@@ -1,0 +1,26 @@
+#!/bin/bash -l
+#SBATCH -J MUSE
+#SBATCH -o /ceph/chpc/shared/aristeidis_sotiras_group/b.y.yang_scratch/T1_MUSE_A4_treatment/slurm_logs/20250620/%j.out
+#SBATCH -e /ceph/chpc/shared/aristeidis_sotiras_group/b.y.yang_scratch/T1_MUSE_A4_treatment/slurm_logs/20250620/%j.err
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH --cpus-per-task 4
+#SBATCH --mem 32G
+#SBATCH -t 24:00:00
+#SBATCH --partition=tier2_cpu
+#SBATCH --account=aristeidis_sotiras
+#SBATCH --exclude=highmem01,highmem02,node06
+
+param_path="/home/b.y.yang/sotiraslab/BradenADLongitudinalPrediction/code/exploratory/a4_treatment/muse.txt"
+
+ROWINDEX=$((SLURM_ARRAY_TASK_ID))
+cmd="$(cat ${param_path} | awk -v line=${ROWINDEX} '{if (NR == line) print $0}')"
+
+echo "===================================="
+echo "running command: ${cmd}"
+echo "===================================="
+echo ""
+
+cd "/home/b.y.yang/sotiraslab/BradenADLongitudinalPrediction/code/2_Preprocessing/slurm/MUSE_sbatch"
+
+eval "${cmd}"
