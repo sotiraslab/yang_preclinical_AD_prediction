@@ -1,12 +1,12 @@
 <!--- This markdown file was designed to roughly follow the Penn LINC Neuroinformatics template: https://pennlinc.github.io/docs/Contributing/ProjectTemplate/ --->
 
-# Predicting future cognitive impairment in preclinical Alzheimer’s disease using amyloid PET and MRI: a multisite machine learning study
+# Predicting future cognitive impairment in preclinical Alzheimer’s disease using amyloid PET and MRI: A multisite machine learning study
 
 ![Graphical abstract](figures/figure1_overview.png)
 
 # Project Description
 
-This repository contains accompanying code for the manuscript "[Predicting future cognitive impairment in preclinical Alzheimer’s disease using amyloid PET and MRI: a multisite machine learning study](https://www.medrxiv.org/content/10.1101/2025.10.15.25337507v2)".
+This repository contains accompanying code for the manuscript "[Predicting future cognitive impairment in preclinical Alzheimer’s disease using amyloid PET and MRI: A multisite machine learning study](https://doi.org/10.1016/j.neurobiolaging.2026.04.005)".
 
 ## Corresponding Authors
 
@@ -52,4 +52,18 @@ Scripts are organized into the following subdirectories:
 
 ## Cite
 
-> In revision at *Neurobiology of Aging*
+> Yang, B., Earnest, T., Bilgel, M., Albert, M.S., Johnson, S.C., Davatzikos, C., Erus, G., Masters, C.L., Resnick, S.M., Miller, M.I., Bakker, A., Morris, J.C., Benzinger, T.L.S., Gordon, B.A., Sotiras, A., 2026. Predicting future cognitive impairment in preclinical Alzheimer’s disease using amyloid PET and MRI: A multisite machine learning study. Neurobiology of Aging. https://doi.org/10.1016/j.neurobiolaging.2026.04.005
+
+```
+@article{yangPredictingFutureCognitive2026,
+  title = {Predicting Future Cognitive Impairment in Preclinical Alzheimer's Disease Using Amyloid PET and MRI: A Multisite Machine Learning Study},
+  author = {Yang, Braden and Earnest, Tom and Bilgel, Murat and Albert, Marilyn S. and Johnson, Sterling C. and Davatzikos, Christos and Erus, Guray and Masters, Colin L. and Resnick, Susan M. and Miller, Michael I. and Bakker, Arnold and Morris, John C. and Benzinger, Tammie L. S. and Gordon, Brian A. and Sotiras, Aristeidis},
+  year = 2026,
+  month = apr,
+  journal = {Neurobiology of Aging},
+  issn = {0197-4580},
+  doi = {10.1016/j.neurobiolaging.2026.04.005},
+  urldate = {2026-04-22},
+  keywords = {amyloid positron emission tomography,clinical trial cohort enrichment,machine learning,patient stratification,preclinical Alzheimer's disease,structural magnetic resonance imaging,support vector machine}
+}
+```
